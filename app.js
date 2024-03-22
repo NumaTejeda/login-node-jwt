@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-//const coockieParser = require('cookie-parser');
+const coockieParser = require('cookie-parser');
 
 const app = express();
 
@@ -23,7 +23,7 @@ dotenv.config({ path: './env/.env' })
 
 //seteamos las cookies
 
-//app.use(coockieParser);
+app.use(coockieParser());
 
 //llamar al router
 
